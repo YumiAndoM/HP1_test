@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+html,
+* {
+  font-family: 'Franklin Gothic Medium',
+    'Arial Narrow',
+    Arial,
+    sans-serif;
+  background-color: #f5f5f5;
+}
+
+.serious {
+
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+
