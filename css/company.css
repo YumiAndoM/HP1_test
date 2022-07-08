@@ -1,0 +1,405 @@
+@charset "UTF-8";
+
+
+
+/* TOPのコーディング */
+header {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: #f5f5f5;
+}
+
+header div.head {
+  background-color: #333;
+  width: 50%;
+  height: 9vh;
+  z-index: 4;
+  position: absolute;
+}
+
+header div.head img {
+  width: 30%;
+  margin-top: 5px;
+}
+
+
+div.head_wrapper {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+div.head_item {
+  width: 70%;
+  height: 50%;
+}
+
+div.head_item img {
+  width: 70%;
+  height: 80vh;
+  object-fit: cover;
+  position: absolute;
+  z-index: 4;
+  top: 9vh;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  background-color: #009966;
+  width: 30%;
+  height: 60vh;
+  top: 20px;
+  left: 30%;
+}
+
+
+
+nav {
+  width: 30%;
+}
+
+nav ul {
+  width: 100%;
+  margin-top: 200px;
+}
+
+nav ul li {
+  width: 100%;
+  line-height: 50px;
+  text-align: center;
+  font-size: 1.4em;
+  margin-top: 20px;
+}
+
+nav ul li a {
+  display: block;
+  width: 100%;
+  color: #333;
+
+}
+
+
+nav ul li a.color {
+  /* 斜めにつけてる該当ページのやつ。下とセット */
+  display: inline-block;
+  /* font-size: 16px; */
+  /* padding: .8em 1.6em .4em .8em; */
+  position: relative;
+  color: #fff;
+  z-index: 1;
+  font-weight: bold;
+}
+
+nav ul li a.color::before {
+  /* 斜めにつけてる該当ページのやつ。上とセット */
+  content: "";
+  position: absolute;
+  width: 90%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  /* left: 0; */
+  z-index: -1;
+  background: #009966;
+  /* transform: scaleY(1.3) perspective(.6em) rotateX(5deg); */
+  transform: scaleY(1.3) perspective(.9em) rotateX(5deg);
+  /* transform-origin: bottom left; */
+  transform-origin: bottom right;
+  /* border-radius: 8px 8px 0 0; */
+}
+
+
+
+div.company2_wrapper {
+  position: relative;
+  width: 100%;
+}
+
+div.company2_wrapper::after {
+  content: "";
+  background-color: #009966;
+  display: block;
+  z-index: 1;
+  width: 70%;
+  height: 40vh;
+  position: absolute;
+  top: 400px;
+  left: 20%;
+}
+
+div.company2_img img {
+  width: 70%;
+  height: 70vh;
+  position: absolute;
+  right: 0;
+  object-fit: cover;
+  z-index: 4;
+}
+
+div.company2_txt {
+  display: block;
+  position: absolute;
+  top: 60vh;
+  width: 80%;
+  background-color: #fff;
+  text-align: center;
+  height: 30vh;
+  z-index: 5;
+}
+
+div.company2_txt h5 {
+  text-align: center;
+  font-size: 3.3em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  line-height: 2.5em;
+  letter-spacing: 0.8em;
+}
+
+
+div.company2_txt p {
+  text-align: center;
+  font-size: 2em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  line-height: 1.5em;
+}
+
+
+/* 代表メッセージ */
+
+section.company_3 {
+  width: 100%;
+  position: relative;
+}
+div.company3_img img {
+  width: 40%;
+  height: 50vh;
+  position: absolute;
+  object-fit: cover;
+  object-position: 0 0;
+  left: 10%;
+  top: 500px;
+}
+
+
+
+div.company3_txt1 {
+  width: 40%;
+    position: absolute;
+      right: 0;
+      top: 600px;
+}
+
+
+div.company3_txt1 h5 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 2.5em;
+  border-bottom: 5px solid #009966;
+  text-align: right;
+  padding-right: 5%;
+  padding-bottom: 30px;
+  z-index: 1;
+}
+
+div.company3_txt1 p {
+  margin-top: 100px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.8em;
+  text-align: right;
+  padding-right: 10%;
+  line-height: 2em;
+  z-index: 2;
+}
+
+div.company3_txt2 {
+  position: absolute;
+  z-index: 5;
+  background-color: #fff;
+  width: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 1100px;
+  line-height: 1.8em;
+  padding: 30px 10%;
+  font-size: 1.4em;
+}
+
+
+
+/* ここから会社情報 */
+section.company_4 {
+  width: 100%;
+  margin-top: 2000px;
+}
+
+h5 {
+  width: 40%;
+  border-bottom: 5px solid #009966;
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 200px;
+  padding-bottom: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+div.company4_wrapper {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+div.company4_wrapper::after {
+  content: "";
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background-color: #009966;
+  right: 0;
+  top: -50px;
+}
+
+div.company4_wrapper::before {
+  content: "";
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  background-color: #009966;
+  left: 45%;
+  bottom: -50px;
+}
+
+div.company4_table {
+  width: 60%;
+  margin-left: 10%;
+  font-size: 1.2em;
+}
+
+div.company4_table tr {
+  width: 100%;
+  height: 80px;
+}
+
+div.company4_table th {
+  width: 20%;
+  text-align: left;
+}
+
+div.company4_table td {
+  text-indent: 10%;
+}
+
+div.company4_img img {
+  width: 50%;
+  height: 70vh;
+  object-fit: cover;
+  position: absolute;
+  z-index: 5;
+  right: 0;
+}
+
+
+
+
+/* ここからｺﾝﾀｸﾄ */
+
+
+section.contact {
+  width: 100%;
+  margin-top: 500px !important;
+}
+
+
+section.contact_right {
+  width: 100%;
+  margin-bottom: 100px;
+  padding-bottom: 100px;
+  position: relative;
+}
+
+
+section.contact_right::after {
+  content: "";
+  position: absolute;
+  width: 70%;
+  z-index: 3;
+  background-color: #009966;
+  top: -20vh;
+  right: 0;
+  height: 1vh;
+}
+
+
+
+section.contact_left {
+  width: 100%;
+  margin-bottom: 100px;
+  padding-bottom: 100px;
+  position: relative;
+}
+
+
+section.contact_left::after {
+  content: "";
+  position: absolute;
+  width: 70%;
+  z-index: 3;
+  background-color: #009966;
+  top: -20vh;
+  left: 0;
+  height: 1vh;
+}
+
+
+
+
+div.contact_box {
+  background-color: #fff;
+  width: 70%;
+  display: block;
+  margin: 500px auto 100px auto;
+  padding-bottom: 100px;
+}
+
+div.contact_box h2 {
+  font-size: 5em;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium',
+    'Arial Narrow',
+    Arial,
+    sans-serif;
+  padding-top: 70px;
+  color: #009966;
+
+}
+
+div.contact_box p {
+  text-align: center;
+  font-size: 1.7em;
+  margin-top: 50px;
+  line-height: 50px;
+  font-family: 'Franklin Gothic Medium',
+    'Arial Narrow',
+    Arial,
+    sans-serif;
+}
+
+div.contact_box p a {
+  text-align: center;
+  font-size: 1.1em;
+  margin-top: 50px;
+  line-height: 70px;
+  font-family: 'Franklin Gothic Medium',
+    'Arial Narrow',
+    Arial,
+    sans-serif;
+  background-color: #009966;
+  color: #fff;
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+}

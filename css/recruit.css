@@ -1,0 +1,312 @@
+@charset "UTF-8";
+
+
+
+/* TOPのコーディング */
+header {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: #f5f5f5;
+}
+
+header div.head {
+  background-color: #333;
+  width: 50%;
+  height: 9vh;
+  z-index: 4;
+  position: absolute;
+}
+
+header div.head img {
+  width: 30%;
+  margin-top: 5px;
+}
+
+
+div.head_wrapper {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+div.head_item {
+  width: 70%;
+  height: 50%;
+}
+
+div.head_item img {
+  width: 70%;
+  height: 80vh;
+  object-fit: cover;
+  position: absolute;
+  z-index: 4;
+  top: 9vh;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  background-color: #009966;
+  width: 30%;
+  height: 60vh;
+  top: 20px;
+  left: 30%;
+}
+
+
+
+nav {
+  width: 30%;
+}
+
+nav ul {
+  width: 100%;
+  margin-top: 200px;
+}
+
+nav ul li {
+  width: 100%;
+  line-height: 50px;
+  text-align: center;
+  font-size: 1.4em;
+  margin-top: 20px;
+}
+
+nav ul li a {
+  display: block;
+  width: 100%;
+  color: #333;
+
+}
+
+
+nav ul li a.color {
+  /* 斜めにつけてる該当ページのやつ。下とセット */
+  display: inline-block;
+  /* font-size: 16px; */
+  /* padding: .8em 1.6em .4em .8em; */
+  position: relative;
+  color: #fff;
+  z-index: 1;
+  font-weight: bold;
+}
+
+nav ul li a.color::before {
+  /* 斜めにつけてる該当ページのやつ。上とセット */
+  content: "";
+  position: absolute;
+  width: 90%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  /* left: 0; */
+  z-index: -1;
+  background: #009966;
+  /* transform: scaleY(1.3) perspective(.6em) rotateX(5deg); */
+  transform: scaleY(1.3) perspective(.9em) rotateX(5deg);
+  /* transform-origin: bottom left; */
+  transform-origin: bottom right;
+  /* border-radius: 8px 8px 0 0; */
+}
+
+
+div.recruit2_wrapper {
+  width: 100%;
+  position: relative;
+}
+
+div.recruit2_wrapper::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #333;
+  bottom: -600px;
+  width: 300px;
+  height: 300px;
+  left: 24%;
+  /* z-index: 3; */
+}
+
+div.recruit2_title {
+  position: absolute;
+  background-color: #009966;
+  width: 30%;
+  height: 500px;
+  display: block;
+  left: 0;
+  z-index: 5;
+}
+
+
+div.recruit2_title h2 {
+  color: #fff;
+  text-align: center;
+  padding-top: 100px;
+  font-size: 2.5em;
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 5px solid #fff;
+  padding-bottom: 30px;
+  letter-spacing: 2px;
+}
+
+div.recruit2_title p {
+  color: #fff;
+  padding-top: 30px;
+  line-height: 2em;
+  font-size: 1.3em;
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.recruit2_txtblock {
+  position: absolute;
+  width: 50%;
+  right: 0;
+  background-color: #fff;
+  padding-left: 10%;
+  padding-top: 50px;
+  top: 100px;
+  z-index: 4;
+}
+
+
+div.recruit2_block {
+  display: flex;
+  margin-bottom: 20px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #009966;
+  padding-top: 50px;
+}
+
+div.border_non {
+  border-bottom: none;
+}
+
+
+div.recruit2_block_img {
+  width: 10%;
+  padding-right: 10%;
+}
+
+div.recruit2_block_img img {
+  width: 100%;
+}
+
+div.recruit2_block_txt h3 {
+  font-size: 1.3em;
+  padding-bottom: 20px;
+  margin-top: 10px;
+}
+
+
+
+
+
+
+/* ここからｺﾝﾀｸﾄ */
+
+
+section.contact {
+  width: 100%;
+  margin-top: 2000px !important;
+}
+
+
+section.contact_right {
+  width: 100%;
+  margin-bottom: 100px;
+  padding-bottom: 100px;
+  position: relative;
+}
+
+
+section.contact_right::after {
+  content: "";
+  position: absolute;
+  width: 70%;
+  z-index: 3;
+  background-color: #009966;
+  top: -20vh;
+  right: 0;
+  height: 1vh;
+}
+
+
+
+section.contact_left {
+  width: 100%;
+  margin-bottom: 100px;
+  padding-bottom: 100px;
+  position: relative;
+}
+
+
+section.contact_left::after {
+  content: "";
+  position: absolute;
+  width: 70%;
+  z-index: 3;
+  background-color: #009966;
+  top: -20vh;
+  left: 0;
+  height: 1vh;
+}
+
+
+
+
+div.contact_box {
+  background-color: #fff;
+  width: 70%;
+  display: block;
+  margin: 500px auto 100px auto;
+  padding-bottom: 100px;
+}
+
+div.contact_box h2 {
+  font-size: 5em;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium',
+    'Arial Narrow',
+    Arial,
+    sans-serif;
+  padding-top: 70px;
+  color: #009966;
+
+}
+
+div.contact_box p {
+  text-align: center;
+  font-size: 1.7em;
+  margin-top: 50px;
+  line-height: 50px;
+  font-family: 'Franklin Gothic Medium',
+    'Arial Narrow',
+    Arial,
+    sans-serif;
+}
+
+div.contact_box p a {
+  text-align: center;
+  font-size: 1.1em;
+  margin-top: 50px;
+  line-height: 70px;
+  font-family: 'Franklin Gothic Medium',
+    'Arial Narrow',
+    Arial,
+    sans-serif;
+  background-color: #009966;
+  color: #fff;
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+}

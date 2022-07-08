@@ -117,17 +117,26 @@ nav ul li a.color::before {
 
 /* 実績のところ */
 
-div.works_1 {
+
+
+section.works_2 {
   width: 100%;
   position: relative;
+  margin-top: 300px;
 }
 
-div.works_wrapper {
+div.works2_wrapper {
   width: 100%;
   display: table;
-  position: absolute;
-  margin-top: 200px;
+  /* position: absolute; */
+  /* margin-top: 200px; */
+  height: 300px;
   border-bottom: 5px solid #009966;
+  /* top: -50vh; */
+}
+
+div.no_bottom_border {
+  border-bottom: none;
 }
 
 /* div.works_wrapper::after {
@@ -145,27 +154,171 @@ div.works2_item {
 
 div.works2_item img {
   width: 100%;
-  height: 1000px;
+  height: 300px;
+  /* height: 1000px; */
+  object-fit: cover;
 }
 
 div.works2_imgbox_left {
   clip-path: polygon(0 0, 100% 0, 70% 100%, 0 100%);
-  position: absolute;
+  /* position: absolute; */
   height: 300px;
-  top: 200px;
+  top: 200px !important;
   left: 0;
+  width: 60%;
+}
+
+div.works2_imgbox_right {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+  /* position: absolute; */
+  height: 300px;
+  top: 200px !important;
+  right: 0;
+  width: 60%;
 }
 
 div.works2_txtbox {
-  position: absolute;
+  /* position: absolute; */
   width: 40%;
   top: 200px;
   left: 60%;
+  vertical-align: middle;
+  text-align: center;
 
 }
 
 
+div.works2_txtbox p {
+  font-size: 1.3em;
+}
+
+p.tag {
+  padding: 2%;
+  background-color: #009966;
+  border-radius: 2px;
+  display: block;
+  width: 10%;
+  margin: 0 auto 10px auto;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+
+p.date {
+  line-height: 35px;
+}
+
+p.txt {
+  margin-top: 20px;
+  line-height: 25px;
+}
+
 
 section.contact {
-  margin-top: 1500px;
+  margin-top: 800px;
+}
+
+
+
+
+/* ここからｺﾝﾀｸﾄ */
+
+
+section.contact {
+  width: 100%;
+  margin-top: 600px !important;
+}
+
+
+section.contact_right {
+  width: 100%;
+  margin-bottom: 100px;
+  padding-bottom: 100px;
+  position: relative;
+}
+
+
+section.contact_right::after {
+  content: "";
+  position: absolute;
+  width: 70%;
+  z-index: 3;
+  background-color: #009966;
+  top: -20vh;
+  right: 0;
+  height: 1vh;
+}
+
+
+
+section.contact_left {
+  width: 100%;
+  margin-bottom: 100px;
+  padding-bottom: 100px;
+  position: relative;
+}
+
+
+section.contact_left::after {
+  content: "";
+  position: absolute;
+  width: 70%;
+  z-index: 3;
+  background-color: #009966;
+  top: -20vh;
+  left: 0;
+  height: 1vh;
+}
+
+
+
+
+div.contact_box {
+  background-color: #fff;
+  width: 70%;
+  display: block;
+  margin: 500px auto 100px auto;
+  padding-bottom: 100px;
+}
+
+div.contact_box h2 {
+  font-size: 5em;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium',
+    'Arial Narrow',
+    Arial,
+    sans-serif;
+  padding-top: 70px;
+  color: #009966;
+
+}
+
+div.contact_box p {
+  text-align: center;
+  font-size: 1.7em;
+  margin-top: 50px;
+  line-height: 50px;
+  font-family: 'Franklin Gothic Medium',
+    'Arial Narrow',
+    Arial,
+    sans-serif;
+}
+
+div.contact_box p a {
+  text-align: center;
+  font-size: 1.1em;
+  margin-top: 50px;
+  line-height: 70px;
+  font-family: 'Franklin Gothic Medium',
+    'Arial Narrow',
+    Arial,
+    sans-serif;
+  background-color: #009966;
+  color: #fff;
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
 }
