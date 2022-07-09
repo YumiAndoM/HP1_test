@@ -161,11 +161,12 @@ div.company2_txt h5 {
 
 div.company2_txt p {
   /* text-align: center; */
-  font-size: 3em;
+  font-size: 2.5em;
   font-family: Georgia, 'Times New Roman', Times, serif;
   line-height: 1.5em;
   margin-top: -150px;
   margin-left: -30%;
+
 
 }
 
@@ -214,6 +215,9 @@ div.company3_txt1 p {
   padding-right: 20%;
   line-height: 2em;
   z-index: 2;
+  background-color: #fff;
+  height: 30vh;
+  padding-top: 30px;
 }
 
 div.company3_txt2 {
