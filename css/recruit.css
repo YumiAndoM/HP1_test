@@ -115,6 +115,7 @@ nav ul li a.color::before {
 div.recruit2_wrapper {
   width: 100%;
   position: relative;
+  top: -200px;
 }
 
 div.recruit2_wrapper::after {
@@ -215,7 +216,7 @@ div.recruit2_block_txt h3 {
 
 section.contact {
   width: 100%;
-  margin-top: 1900px !important;
+  margin-top: 1400px !important;
 }
 
 

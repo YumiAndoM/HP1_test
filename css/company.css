@@ -116,6 +116,7 @@ nav ul li a.color::before {
 div.company2_wrapper {
   position: relative;
   width: 100%;
+  top: -200px;
 }
 
 div.company2_wrapper::after {
@@ -176,6 +177,7 @@ div.company2_txt p {
 section.company_3 {
   width: 100%;
   position: relative;
+  top: -300px;
 }
 div.company3_img img {
   width: 40%;
@@ -238,7 +240,7 @@ div.company3_txt2 {
 /* ここから会社情報 */
 section.company_4 {
   width: 100%;
-  margin-top: 2000px;
+  margin-top: 1500px;
 }
 
 h5 {
@@ -315,7 +317,7 @@ div.company4_img img {
 
 section.contact {
   width: 100%;
-  margin-top: 500px !important;
+  margin-top: -200px !important;
 }
 
 

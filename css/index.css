@@ -138,7 +138,7 @@ section.news::after {
   background-color: #333;
   width: 30%;
   height: 20vh;
-  top: 70vh;
+  top: 50vh;
   z-index: 2;
   left: 13%;
 
@@ -152,8 +152,9 @@ div.title {
   background-color: #009966;
   width: 35%;
   color: #ffffff;
-  height: 60vh;
+  height: 50vh;
   z-index: 3;
+  margin-top: -70px;
 }
 
 div.title h2 {
@@ -193,7 +194,7 @@ div.title p a {
 
 div.news_list {
   width: 65%;
-  margin-top: 35vh;
+  margin-top: 10vh;
 }
 
 div.news_list ul {
@@ -232,7 +233,7 @@ div.news_list ul li span.list {
 
 section.contact {
   width: 100%;
-  margin-top: 300px !important;
+  margin-top: -150px !important;
 }
 
 

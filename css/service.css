@@ -116,7 +116,7 @@ nav ul li a.color::before {
 /* 実績写真のところ */
 section.service_2 {
   width: 100%;
-  margin-top: 700px;
+  margin-top: 200px;
 }
 
 section.service_2 ul {
@@ -155,13 +155,14 @@ section.service_2 ul li p {
 
 section.service3 {
   width: 100%;
-  margin-top: 500px;
+  margin-top: -500px !important;
 }
 
 div.service3_wrapper {
   width: 100%;
   display: flex;
   position: relative;
+  top: -300px;
 
 }
 
@@ -169,7 +170,7 @@ div.txtbox {
   width: 60%;
   /* height: 600px; */
   position: absolute;
-  top: 300px;
+  top: 200px;
   z-index: 8;
   background-color: #fff;
   padding-bottom: 30px;
@@ -243,7 +244,7 @@ section.contact {
 
 section.contact {
   width: 100%;
-  margin-top: 1300px !important;
+  margin-top: 800px !important;
 }
 
 

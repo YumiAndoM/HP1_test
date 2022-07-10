@@ -122,7 +122,7 @@ nav ul li a.color::before {
 section.works_2 {
   width: 100%;
   position: relative;
-  margin-top: 300px;
+  margin-top: -300px;
 }
 
 div.works2_wrapper {
@@ -227,7 +227,7 @@ section.contact {
 
 section.contact {
   width: 100%;
-  margin-top: 500px !important;
+  margin-top: -200px !important;
 }
 
 
